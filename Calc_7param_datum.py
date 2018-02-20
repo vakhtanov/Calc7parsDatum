@@ -13,7 +13,7 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
 #from PyQt5.QtGui import *
 ## __________________________
 
-elips_par={'wgs84':6378137.0,'Красовского 1942':6378245.0}
+elips_par={'wgs84':[6378137.0,6356752,314],'Красовского 1942':[6378245.0,6356863.019]}
 elips_list=set(elips_par.keys())
 import sys, os
 class QtMainWindow7Par(QMainWindow, Ui_Qt7parWindow):
